@@ -69,7 +69,7 @@ for i in integers:
     print(i)
 
 # How to generate random number
-import random
+import random # We need to import random module in order to use random functions
 print("display random Integer number between 1 and 100")
 x=random.randint(1, 100)
 print("random x=",x)
@@ -136,22 +136,26 @@ familly={"Dad" : {
 }
 
 print("My familly : ", familly)
-print("Mu mum : ", familly.get("Mum"))
+print("My mum : ", familly.get("Mum"))
 
 # How to get information from user
 print("input sample :")
 username = input("Enter your name :")
-print("Hello " + username + "!")
+age = int(input("Enter your age :")) # To convert the input of the user in Integer we use str() function
+print("Hello " + username + " you are", age, "years old !")
+
 
 # How to use Exceptions
 print("Exception sample, we try do divide 87 by 0")
 try:
   i = 87/0
-  f.write("i=" + str(i))
+  print("i=", i)
 except:
   print("Division by zero !")
+else:
+  print("The restult is :",i)
 finally:
-  print("Result is infinity")
+  print("Division done")
 
 # How to use files
 print("Sample with file")
