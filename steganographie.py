@@ -1,6 +1,7 @@
 #Steganographie
 from PIL import Image
 
+#T
 def CodeAsciiVersListe(num):
     liste=[]
     for c in format(num,"08b"):
